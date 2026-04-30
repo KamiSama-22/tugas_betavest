@@ -1,21 +1,38 @@
-export interface ButtonProps{
-    label: string;
-    variant?: "primary" | "outline";
-    className?: string;
-    onClick?: () => void;
+export interface ButtonProps {
+  type?: "button" | "submit";
+  children?: React.ReactNode;
+  label?: string;
+  variant?: "primary" | "outline";
+  loading?: boolean;
+  className?: string;
+  onClick?: () => void;
 }
 
-export const Button: React.FC<ButtonProps> = ({label, variant = "primary", className}) =>{
-    const baseStyle = "px-10 py-3 rounded font-medium transition-all duration-200";
-    const variantStyle = 
-        variant === "primary"
-            ? "bg-red-900 text-white hover:bg-red-800"
-            : "border border-red-900 text-red-900 hover:bg-red-100";
-        return (
-            <button className={`${baseStyle} ${variantStyle} ${className}`}>
-                {label}
-            </button>
-        );
+export const Button: React.FC<ButtonProps> = ({
+  type = "button",
+  children,
+  label,
+  variant = "primary",
+  loading = false,
+  className,
+  onClick,
+}) => {
+  const baseStyle =
+    "rounded-xl px-5 py-2.5 text-sm font-semibold transition-all duration-200 disabled:cursor-not-allowed disabled:opacity-70";
+  const variantStyle =
+    variant === "primary"
+      ? "bg-indigo-600 text-white hover:bg-indigo-500"
+      : "border border-indigo-300 text-indigo-700 hover:bg-indigo-50";
+  return (
+    <button
+      type={type}
+      onClick={onClick}
+      disabled={loading}
+      className={`${baseStyle} ${variantStyle} ${className ?? ""}`}
+    >
+      {loading ? "Loading..." : (children ?? label)}
+    </button>
+  );
 };
 
 export default Button;

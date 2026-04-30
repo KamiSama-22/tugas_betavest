@@ -1,5 +1,5 @@
-import Button from "./ui/Button";
-import type { ButtonProps } from "./ui/Button";
+import Button from "./Button";
+import type { ButtonProps } from "./Button";
 
 interface InfocardProps{
     title: string;
