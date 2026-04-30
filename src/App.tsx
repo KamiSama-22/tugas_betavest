@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { useForm } from "react-hook-form";
-import InputText from "./components/ui/inputText.tsx";
-import InputPassword from "./components/ui/InputPassword.tsx";
-import InputSelectEvent from "./components/ui/Select.tsx";
+import InputText from "./components/ui/inputText";
+import InputPassword from "./components/ui/InputPassword";
+import InputSelectEvent from "./components/ui/Select";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
 import Button from "./components/ui/Button";
