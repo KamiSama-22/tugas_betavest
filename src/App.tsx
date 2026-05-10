@@ -1,16 +1,16 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Competition from "./pages/competition";
 import Login from "./pages/login";
-import Beranda from "./pages/beranda.tsx";
-import Seminar from "./pages/seminar.tsx";
-import Talkshow from "./pages/Talkshow.tsx";
+import Beranda from "./pages/beranda";
+import Seminar from "./pages/seminar";
+import Talkshow from "./pages/Talkshow";
 import MainLayout from "./layout/mainlayout";
 import AuthLayout from "./layout/authlayout";
-import Workshop from "./pages/workshop.tsx";
-import CreateCategories from "./pages/Dashboard/Categories/CreateCategories.tsx";
-import EventList from "./pages/Dashboard/event/EventList.tsx";
-import Register from "./pages/register.tsx";
-import CreateSpeakers from "./pages/Dashboard/Speaker/Speaker.tsx";
+import Workshop from "./pages/workshop";
+import CreateCategories from "./pages/Dashboard/Categories/CreateCategories";
+import EventList from "./pages/Dashboard/event/EventList";
+import Register from "./pages/register";
+import CreateSpeakers from "./pages/Dashboard/Speaker/Speaker";
 
 function App() {
   return (
