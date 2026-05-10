@@ -21,8 +21,8 @@ export const Button: React.FC<ButtonProps> = ({
     "rounded-xl px-5 py-2.5 text-sm font-semibold transition-all duration-200 disabled:cursor-not-allowed disabled:opacity-70";
   const variantStyle =
     variant === "primary"
-      ? "bg-indigo-600 text-white hover:bg-indigo-500"
-      : "border border-indigo-300 text-indigo-700 hover:bg-indigo-50";
+      ? "bg-[#7B1D3F] text-white hover:bg-[#5a152e]"
+      : "border border-indigo-300 text-indigo-700 hover:bg-[#5a152e]";
   return (
     <button
       type={type}

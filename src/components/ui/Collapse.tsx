@@ -10,7 +10,7 @@ const Collapse: React.FC<CollapseProps> = ({ title, description }) => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
   return (
-    <div className="border-2 border-pink-200 bg-white rounded-xl shadow-[4px_4px_0px_#ec4899] overflow-hidden">
+    <div className="border-2 border-pink-200 bg-white rounded-xl shadow-[4px_4px_0px_#fee3ec] overflow-hidden">
       <button
         onClick={() => setIsOpen(!isOpen)}
         className="cursor-pointer w-full px-5 py-5 flex items-center gap-3 text-left"

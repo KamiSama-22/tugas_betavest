@@ -1,1 +1,16 @@
 @import "tailwindcss";
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    /* Geser ke kiri sebesar setengah dari total lebar (asumsi konten diduplikasi) */
+    transform: translateX(calc(-50% - 0.5rem));
+  }
+}
+
+.animate-scroll {
+  /* Membaca variabel dari inline style React */
+  animation: scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite;
+}
