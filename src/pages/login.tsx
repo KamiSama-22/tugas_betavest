@@ -7,7 +7,7 @@ import { Link, useNavigate } from "react-router-dom";
 // Import komponen UI sesuai jalur proyek kamu
 
 import InputPassword from "../components/ui/InputPassword";
-import InputText from "../components/ui/InputText";
+import InputText from "../components/ui/inputText";
 import { useAuthStore } from "../Store/useAuthStore";
 
 // Schema validasi
