@@ -5,7 +5,7 @@ import { z } from "zod";
 import { Link, useNavigate } from "react-router-dom";
 
 // Import komponen UI sesuai jalur proyek
-import InputText from "../components/ui/InputText";
+import InputText from "../components/ui/inputText";
 import InputPassword from "../components/ui/InputPassword";
 // Schema validasi
 const schema = z
