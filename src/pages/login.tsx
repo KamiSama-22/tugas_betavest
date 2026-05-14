@@ -40,7 +40,7 @@ export default function LoginForm() {
     // Logika pengecekan kredensial
     if (cleanEmail === "admin@gmail.com" && cleanPassword === "password123") {
       localStorage.setItem("token", "dummy_token");
-      login(cleanEmail); 
+      login(cleanEmail);
       alert("Login berhasil!");
       navigate("/dashboard");
     } else {

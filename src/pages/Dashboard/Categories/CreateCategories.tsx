@@ -34,6 +34,7 @@ export default function CreateCategory() {
     }
 
     return (
+        
         <div className="px-54">
             <div className="flex flex-col text-center p-5">
                 <h1 className="font-semibold text-5xl text-red-900">Create new category</h1>
